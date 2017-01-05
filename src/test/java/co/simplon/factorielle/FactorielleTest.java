@@ -7,20 +7,36 @@ import org.junit.Test;
 public class FactorielleTest {
 
 	@Test
-	public void testcalculer() {
+	public void factorielle_de_1_renvoie_1() {
 		
-	Factorielle factorielle = new Factorielle();
-	long n= factorielle.calculer(1);
+	Factorielle monfactorielle = new Factorielle();
+	long n= monfactorielle.calculer(1);
 	
 	assertEquals(1, n);
 	
 	}
 
+	@Test
+	public void factorielle_de_3_renvoie_6() {
+		
+	Factorielle monfactorielle = new Factorielle();
+	long n= monfactorielle.calculer(3);
+	
+	assertEquals(6, n);
+	
+	}
+	
+	
+	@Test
+	public void factorielle_O_renvoie_1() {
+	
+	long n = 0;
+		
+	Factorielle monfactorielle = new Factorielle();
+	monfactorielle.calculer(0);
+	
+	assertEquals(1, n);
+	
+	}
+	
 }
-
-
-/*public long calculer(long n) {
-	if (n > 1) {
-		return n * calculer(n-1);
-	} else if (n < 0) {
-		throw new IllegalArgumentException();*/
