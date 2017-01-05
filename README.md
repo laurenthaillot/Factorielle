@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/laurenthaillot/Factorielle.svg?branch=FactorielleLaurent)](https://travis-ci.org/laurenthaillot/Factorielle)
+
+
+
 # Factorielle
 
 Base de code propice à l'écriture de tests unitaires
