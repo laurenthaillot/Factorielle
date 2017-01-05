@@ -1,0 +1,13 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class FactorielleTest {
+
+	@Test
+	public void test() {
+		
+	}
+
+}
