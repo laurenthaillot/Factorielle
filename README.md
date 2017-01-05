@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/laurenthaillot/Factorielle.svg?branch=FactorielleLaurent)](https://travis-ci.org/laurenthaillot/Factorielle)
 
-https://github.com/laurenthaillot/Factorielle
+
 
 # Factorielle
 
