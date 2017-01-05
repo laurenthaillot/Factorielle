@@ -3,6 +3,8 @@ package co.simplon.factorielle;
 /**
  * Factorielle
  */
+
+
 public class Factorielle 
 {
     public Factorielle() {
