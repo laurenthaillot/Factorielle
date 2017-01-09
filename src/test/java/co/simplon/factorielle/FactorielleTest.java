@@ -1,10 +1,12 @@
 package co.simplon.factorielle;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+
+import org.junit.*;
 
 public class FactorielleTest {
 
@@ -15,15 +17,19 @@ public class FactorielleTest {
 		factorielle = new Factorielle();
 	}
 
-	@Test
-	@Ignore
-	public void factorielle_de_1_renvoie_1() {
+	@Test (timeout=1)
+	
+		public void factorielle_de_1_renvoie_18() {
+		
+		int a = 1;				
+		while (a<100){
+		long n = factorielle.calculer(18);
 
-		long n = factorielle.calculer(1);
-
-		assertEquals(1, n);
-
+		assertEquals(6402373705728000l, n);
+		a++;
+		}
 	}
+	
 
 	@Test
 	public void factorielle_de_5_renvoie_120() {
@@ -40,7 +46,6 @@ public class FactorielleTest {
 		long n = factorielle.calculer(3);
 
 		assertTrue(n == 6);
-
 	}
 
 	@Test
@@ -59,4 +64,23 @@ public class FactorielleTest {
 		factorielle.calculer(n);
 
 	}
+	
+	
+	@Test 
+	public void Factorielle_de_4_doit_etre_24_avec_Hamcrest(){
+		
+		//Given
+		long entier = 4;
+		long resultatattendu =24;
+		
+		// When
+		long resultat =factorielle.calculer(entier);
+						
+		//then
+		
+		assertThat(resultat, equalTo(resultatattendu));
+				
+	}
+	
+	
 }
